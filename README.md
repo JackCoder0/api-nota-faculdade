@@ -64,7 +64,6 @@ API-NOTA-FACULDADE/
 
 ```bash
 git https://github.com/JackCoder0/api-nota-faculdade.git
-cd seu-repo
 ```
 
 ### 2. Instalar o projeto na máquina
