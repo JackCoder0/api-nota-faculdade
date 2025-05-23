@@ -36,6 +36,7 @@ async function carregarAlunos() {
     alunos.forEach(aluno => {
       const tr = document.createElement("tr");
       tr.innerHTML = `
+        <td>${aluno.id}</td>
         <td>${aluno.name}</td>
         <td>${aluno.matricula}</td>
         <td>${aluno.email}</td>
@@ -52,6 +53,7 @@ async function carregarAlunos() {
     console.error("Erro ao carregar alunos:", error);
   }
 }
+
 // REGISTRAR NOTA
 document.getElementById("form-nota").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -99,6 +101,7 @@ async function verDetalhes(id) {
     console.error("Erro ao carregar detalhes do aluno:", error);
   }
 }
+
 // EXCLUIR ALUNO
 async function excluirAluno(id) {
   if (!confirm("Deseja excluir este aluno?")) return;
