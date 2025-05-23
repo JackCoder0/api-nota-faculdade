@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "https://api-nota-faculdade.onrender.com";
 
 // CADASTRAR NOVO ALUNO
 document.getElementById("form-cadastro").addEventListener("submit", async (e) => {
