@@ -205,6 +205,31 @@ app.post("/students/:id/grades", (req, res) => {
   res.json(student);
 });
 
+/**
+ * @swagger
+ * /subjects:
+ *   get:
+ *     summary: Lista todas as disciplinas disponíveis
+ *     responses:
+ *       200:
+ *         description: Lista de disciplinas
+ */
+app.get("/subjects", (req, res) => {
+  const subjects = [
+    "Matemática",
+    "Português",
+    "História",
+    "Geografia",
+    "Ciências",
+    "Inglês",
+    "Educação Física",
+    "Artes"
+  ];
+
+  res.json(subjects);
+});
+
+
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
